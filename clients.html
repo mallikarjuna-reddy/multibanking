@@ -1,0 +1,125 @@
+<!doctype html>
+
+<html lang="en-US">
+<head>
+<script>
+function inputFocus(i){
+    if(i.value==i.defaultValue){ i.value=""; i.style.color="#000"; }
+}
+function inputBlur(i){
+    if(i.value==""){ i.value=i.defaultValue; i.style.color="#888"; }
+}
+
+function validateForm() {
+    var x = document.forms["myForm"]["fname"].value;
+    if (x == null || x == "") {
+        alert("Name must be filled out");
+        return false;
+    }
+}
+</script>
+<meta charset="UTF-8" />
+<title>MULTIBanking</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div id="wrap">
+
+<nav id="mainnav">
+
+<h1 id="textlogo">
+<a href="index.html">MULTI<span> Banking</span></a>
+</h1>
+<ul>
+
+	<li><a href="index.html">Home</a></li>
+    <li><a href="admin.html">Admin</a></li>
+    <li class="active"><a href="clients.html">Client services</a></li>
+    <li><a href="about.html">About</a></li>
+    
+
+
+
+</ul>
+</nav>
+
+<section id="content" class="normalpage"><section id="page"><section id="fourcols">
+<header class="subhead">
+<h2>welcome client</h2>
+</header>
+<div class="clear"></div>
+<h2>
+ <p bgcolor=110000><center><table width=25% height=100% cellspacing=10>
+  <tr><th colspan=2><h2>existing user!  Sign in</h2></th></tr>
+    <form name="f1" method="post" action="login">
+       <tr>
+       <th ><label>       username</label></th><th><input type="text" name="t1" style="color:#888;" required="required"
+    placeholder="username" title="enter username" onfocus="inputFocus(this)" onblur="inputBlur(this)" /></th>
+       </tr>
+       <tr>
+       <th><label>       password</label></th><th><input type="password" name="t2" style="color:#888;"  required="required"
+    placeholder="password" title="enter password" onfocus="inputFocus(this)" onblur="inputBlur(this)" /></th>
+       </tr>
+        <tr>
+       <th><input type="submit" value="Submit" /></th><th><input type="reset" value="Reset"/></th><th><a href="signuppage.html">signup</a></th>
+       </tr>
+   </form>   
+  </table></p>
+</h2>
+<div class="clear"></div>
+</section>
+<article class="post">
+<div class="imageholder">
+  <img src="images/imagesample.jpg" width="238" height="148"></div>
+<section class="entry"><h3>Software Development</h3>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris volutpat venenatis urna convallis tristique. Duis consectetur porta iaculis. Quisque varius erat tellus. Duis consequat dolor et mi egestas tristique. Vivamus risus est, varius nec rutrum vel, fringilla id tellus. Ut volutpat congue libero, ut tempus diam fringilla tincidunt. Pellentesque semper luctus dictum. Ut at consequat nisi. Vestibulum consectetur mauris id diam tincidunt congue. Fusce nec diam eget est commodo sollicitudin sit amet at tortor. In hac habitasse platea dictumst. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vestibulum iaculis dolor nec odio fringilla ultrices. Maecenas nisi tortor, aliquet in molestie a, dignissim eu diam. Mauris ultricies augue sed tellus rhoncus at elementum ligula ultricies.</p>
+  </section>
+  <div class="clear"></div>
+</article>
+
+<article class="post">
+<div class="imageholder">
+  <img src="images/imagesample.jpg" width="238" height="148"></div>
+<section class="entry">
+<h3>Web Design &amp; Development</h3>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris volutpat venenatis urna convallis tristique. Duis consectetur porta iaculis. Quisque varius erat tellus. Duis consequat dolor et mi egestas tristique. Vivamus risus est, varius nec rutrum vel, fringilla id tellus. Ut volutpat congue libero, ut tempus diam fringilla tincidunt. Pellentesque semper luctus dictum. Ut at consequat nisi. Vestibulum consectetur mauris id diam tincidunt congue. Fusce nec diam eget est commodo sollicitudin sit amet at tortor. In hac habitasse platea dictumst. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vestibulum iaculis dolor nec odio fringilla ultrices. Maecenas nisi tortor, aliquet in molestie a, dignissim eu diam. Mauris ultricies augue sed tellus rhoncus at elementum ligula ultricies.</p>
+  </section>
+  <div class="clear"></div>
+</article>
+
+<article class="post">
+<div class="imageholder">
+  <img src="images/imagesample.jpg" width="238" height="148"></div>
+<section class="entry">
+<h3>Mobile Applications</h3>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris volutpat venenatis urna convallis tristique. Duis consectetur porta iaculis. Quisque varius erat tellus. Duis consequat dolor et mi egestas tristique. Vivamus risus est, varius nec rutrum vel, fringilla id tellus. Ut volutpat congue libero, ut tempus diam fringilla tincidunt. Pellentesque semper luctus dictum. Ut at consequat nisi. Vestibulum consectetur mauris id diam tincidunt congue. Fusce nec diam eget est commodo sollicitudin sit amet at tortor. In hac habitasse platea dictumst. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vestibulum iaculis dolor nec odio fringilla ultrices. Maecenas nisi tortor, aliquet in molestie a, dignissim eu diam. Mauris ultricies augue sed tellus rhoncus at elementum ligula ultricies.</p>
+  </section>
+  <div class="clear"></div>
+</article>
+
+<article class="post">
+<div class="imageholder">
+  <img src="images/imagesample.jpg" width="238" height="148"></div>
+<section class="entry">
+<h3>Online Marketing</h3>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris volutpat venenatis urna convallis tristique. Duis consectetur porta iaculis. Quisque varius erat tellus. Duis consequat dolor et mi egestas tristique. Vivamus risus est, varius nec rutrum vel, fringilla id tellus. Ut volutpat congue libero, ut tempus diam fringilla tincidunt. Pellentesque semper luctus dictum. Ut at consequat nisi. Vestibulum consectetur mauris id diam tincidunt congue. Fusce nec diam eget est commodo sollicitudin sit amet at tortor. In hac habitasse platea dictumst. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vestibulum iaculis dolor nec odio fringilla ultrices. Maecenas nisi tortor, aliquet in molestie a, dignissim eu diam. Mauris ultricies augue sed tellus rhoncus at elementum ligula ultricies.</p>
+  </section>
+  <div class="clear"></div>
+</article>
+</section>
+</section>
+</div>
+
+<footer>
+
+<div id="bottom">
+<a href="#">Home</a> | <a href="#">About Us</a> | <a href="#">Contact Us</a> 
+<div class="clear"></div>
+</div>
+<div id="credits">
+2015 &copy; All Rights Reserved.  </div>
+</footer>
+
+</body>
+</html>

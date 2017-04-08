@@ -1,0 +1,108 @@
+<!doctype html>
+
+<html lang="en-US">
+<head>
+<script>
+function inputFocus(i){
+    if(i.value==i.defaultValue){ i.value=""; i.style.color="#000"; }
+}
+function inputBlur(i){
+    if(i.value==""){ i.value=i.defaultValue; i.style.color="#888"; }
+}
+</script>
+<meta charset="UTF-8" />
+<title>MULTIBanking</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div id="wrap">
+
+<nav id="mainnav">
+
+<h1 id="textlogo">
+<a href="sclients.html">MULTI<span> Banking</span></a>
+</h1>
+<ul>
+
+	<li><a href="sclients.html">Home</a></li>
+    
+    <li class="active"><a href="sclients.html">Client services</a></li>
+    <li><a href="sclients.html">About</a></li>
+    <li><a href="clients.html">logout</a></li>
+
+
+
+</ul>
+</nav>
+
+<section id="content" class="normalpage"><section id="page"><section id="fourcols">
+<header class="subhead">
+<h2>Make your transcations</h2>
+</header>
+<div class="clear"></div>
+<h2>
+ <p bgcolor=110000><center>
+
+    <form name="f1" method="post" action="trans">
+     <table width=50% height=100% cellspacing=10>
+       <tr><th colspan=4><h2><center>_ _Sender details_ _ _ _Reciever details_ _</center></h2></th></tr>
+       <tr>
+       <th ><label>A/C number</label></th><th><input type="number" name="san"  style="color:#888;" 
+    value="First Name" required="required" onfocus="inputFocus(this)" onblur="inputBlur(this)" min=100000000000000 max=999999999999999 title="bank a/c number is of 15digits"/></th>
+        <th ><label>A/C number</label></th><th><input type="number" name="ran" style="color:#888;" 
+    value="First Name" required="required" onfocus="inputFocus(this)" onblur="inputBlur(this)" min=100000000000000 max=999999999999999 title="bank a/c number is of 15digits"/></th>
+       </tr>
+       <tr>
+       <th><label>A/C holder name</label></th><th><input type="char" name="shn" title="please enter full name" style="color:#888;" 
+    value="First Name" required="required" onfocus="inputFocus(this)" onblur="inputBlur(this)"/></th>
+        <th ><label>A/C holder name</label></th><th><input type="char" name="rhn" title="please enter full name" style="color:#888;" 
+    value="First Name"  required="required" onfocus="inputFocus(this)" onblur="inputBlur(this)"/></th>
+       </tr>
+       
+       <tr>
+       <th><label> IFSC </label></th><th><input type="text" name="sif" required="required" pattern="[A-Za-z0-9]{7}" title="IFSC number is 7charecters combination of alphabet and 0-9" style="color:#888;" 
+    value="First Name" onfocus="inputFocus(this)" onblur="inputBlur(this)"/></th>
+        <th ><label> IFSC </label></th><th><input type="text" name="rif" required="required" pattern="[A-Za-z0-9]{7}" title="IFSC number is 7charecters combination of alphabet and 0-9" style="color:#888;" 
+    value="First Name" onfocus="inputFocus(this)" onblur="inputBlur(this)"/></th>
+       </tr>
+           <tr>
+       <th><label> AMOUNT </label></th><th><input type="number"  name="amount" min=0 max=100000 title="amount to be transfered" style="color:#888;" 
+    value="First Name"  required="required" onfocus="inputFocus(this)" onblur="inputBlur(this)"/></th>
+          </tr>
+        <tr>
+       <th><input type="submit" value="proceed"/></th><th><input type="reset" value="Reset"/></th>
+       </tr>
+     </table>
+  </form></p>
+</h2>
+<div class="clear"></div>
+</section>
+
+
+
+
+<article class="post">
+
+<section class="entry">
+<h3>Online Marketing</h3>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris volutpat venenatis urna convallis tristique. Duis consectetur porta iaculis. Quisque varius erat tellus. Duis consequat dolor et mi egestas tristique. Vivamus risus est, varius nec rutrum vel, fringilla id tellus. Ut volutpat congue libero, ut tempus diam fringilla tincidunt. Pellentesque semper luctus dictum. Ut at consequat nisi. Vestibulum consectetur mauris id diam tincidunt congue. Fusce nec diam eget est commodo sollicitudin sit amet at tortor. In hac habitasse platea dictumst. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vestibulum iaculis dolor nec odio fringilla ultrices. Maecenas nisi tortor, aliquet in molestie a, dignissim eu diam. Mauris ultricies augue sed tellus rhoncus at elementum ligula ultricies.</p>
+  </section>
+  <div class="clear"></div>
+</article>
+</section>
+</section>
+</div>
+
+<footer>
+
+<div id="bottom">
+<a href="#">Home</a> | <a href="#">About Us</a> | <a href="#">Contact Us</a> 
+<div class="clear"></div>
+</div>
+<div id="credits">
+2015 &copy; All Rights Reserved.  </div>
+</footer>
+
+</body>
+</html>

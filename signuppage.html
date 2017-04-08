@@ -1,0 +1,133 @@
+<!doctype html>
+
+<html lang="en-US">
+<head>
+<script>
+function inputFocus(i){
+    if(i.value==i.defaultValue){ i.value=""; i.style.color="#000"; }
+}
+function inputBlur(i){
+    if(i.value==""){ i.value=i.defaultValue; i.style.color="#888"; }
+}
+function validateForm() {
+    var x = document.forms["myForm"]["fname"].value;
+    if (x == null || x == "") {
+        alert("Name must be filled out");
+        return false;
+    }
+}
+
+</script>
+<meta charset="UTF-8" />
+<title>MULTIBanking</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div id="wrap">
+
+<nav id="mainnav">
+
+<h1 id="textlogo">
+<a href="index.html">MULTI<span> Banking</span></a>
+</h1>
+<ul>
+
+	<li><a href="index.html">Home</a></li>
+    <li><a href="admin.html">Admin</a></li>
+    <li><a href="clients.html">client services</a></li>
+    <li><a href="about.html">About</a></li>
+    
+
+</ul>
+</nav>
+
+<section id="content" class="normalpage"><section id="page"><section id="fourcols">
+<header class="subhead">
+<h2>welcome to multibanking</h2>
+</header>
+<h2><center><table width=35% height=100% cellspacing=10>
+  <tr><th colspan=2><h2>Register here</h2></th></tr>
+    <form name="f1" action="signup" method="post" >
+       <marquee bgcolor="cyan">we offer only ANDHRA BANK,ICICI BANK,HDFC BANK Transcations</marquee>
+       <marquee bgcolor="orange">please,enter the bank details if account exists only</marquee>
+       <tr>
+       <th ><label>firstname </label></th><th><input type="text" name="t1" style="color:#888;" 
+   placeholder="firstname" title="enter only alphabets"  required="required" pattern="[a-zA-Z ]*" onfocus="inputFocus(this)" onblur="inputBlur(this)"/></th>
+       </tr>
+       <tr>
+       <th><label>last name </label></th><th><input type="text" name="t2" style="color:#888;" 
+   placeholder="lastname" title="enter only alphabets"  required="required" pattern="[a-zA-Z ]*" onfocus="inputFocus(this)" onblur="inputBlur(this)"/></th>
+       </tr>
+        
+       <tr>
+       <th><label>email </label></th><th><input type="text" name="t3"  required="required" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" title=" please follow characters@characters.domain ex:abc12@gmail.com " style="color:#888;" 
+  placeholder="emailid" onfocus="inputFocus(this)" onblur="inputBlur(this)"/></th>
+       </tr>
+       <tr>
+       <th><label>mobile </label></th><th><input type="number" name="t4"  required="required" pattern="[0-9]{10}" style="color:#888;" 
+  placeholder="mobile" onfocus="inputFocus(this)" onblur="inputBlur(this)" min=1000000000 max=9999999999 title=" mobile number is of 10digits"/></th>
+       </tr>
+        
+        <tr>
+       <th ><label>ANDHRA BANK</label></th><th><input type="number" name="t5" placeholder="andhra bank a/c number" required="required" style="color:#888;" 
+    onfocus="inputFocus(this)" onblur="inputBlur(this)" min=100000000000000 max=999999999999999 title="bank a/c number is of 15digits"/></th>
+       </tr>
+        <tr>
+       <th ><label>ANDHRA BANK</label></th><th><input type="text" name="t6" placeholder="andhra bank a/c holder name" title="enter only alphabets" required="required" pattern="[a-zA-Z ]*" style="color:#888;" 
+    onfocus="inputFocus(this)" onblur="inputBlur(this)"/></th>
+       </tr>
+        <tr>
+       <th ><label>ANDHRA BANK</label></th><th><input type="text" name="t7" placeholder="andhra bank IFSC code"  required="required" pattern="[A-Za-z0-9]{7}" title="IFSC number is 7charecters combination of alphabet and 0-9" style="color:#888;" 
+    onfocus="inputFocus(this)" onblur="inputBlur(this)"/></th>
+       </tr>
+        
+        
+        <tr>
+       <th ><label>ICICI</label></th><th><input type="number" name="t8" placeholder="icici a/c number"  required="required" style="color:#888;" 
+     onfocus="inputFocus(this)" onblur="inputBlur(this)" min=100000000000000 max=999999999999999 title="bank a/c number is of 15digits"/></th>
+       </tr>
+        <tr>
+       <th ><label>ICICI</label></th><th><input type="text" name="t9" placeholder="icici a/c holder name" title="enter only alphabets"  required="required" pattern="[a-zA-Z ]*" style="color:#888;" 
+     onfocus="inputFocus(this)" onblur="inputBlur(this)"/></th>
+       </tr>
+        <tr>
+       <th ><label>ICICI</label></th><th><input type="text" name="t10" placeholder="icici IFSC code"  required="required" pattern="[A-Za-z0-9]{7}" title="IFSC number is 7charecters combination of alphabet and 0-9" style="color:#888;" 
+     onfocus="inputFocus(this)" onblur="inputBlur(this)"/></th>
+       </tr>
+       
+        
+        <tr>
+       <th ><label>HDFC</label></th><th><input type="number" name="t11" placeholder="hdfc a/c number" value=0 style="color:#888;" 
+     onfocus="inputFocus(this)" onblur="inputBlur(this)"  required="required" min=100000000000000 max=999999999999999 title="bank a/c number is of 15digits"/></th>
+       </tr>
+        <tr>
+       <th ><label>HDFC</label></th><th><input type="text" name="t12" placeholder="hdfc a/c holder" title="enter only alphabets"  required="required" pattern="[a-zA-Z ]*" style="color:#888;" 
+     onfocus="inputFocus(this)" onblur="inputBlur(this)"/></th>
+       </tr>
+        <tr>
+       <th ><label>HDFC</label></th><th><input type="text" name="t13" placeholder="hdfc IFSC code"  required="required" pattern="[A-Za-z0-9]{7}" title="IFSC number is 7charecters combination of alphabet and 0-9" style="color:#888;" 
+     onfocus="inputFocus(this)" onblur="inputBlur(this)"/></th>
+       </tr>
+       
+        
+       
+       
+        <tr>
+       <th><input type="submit" value="Submit"/></th><th><input type="reset" value="Reset"/></th><th><a href="clients.html">existing user!! sign in</a></th>
+       </tr>
+   </form>   
+  </table>
+</h2>
+<footer>
+
+<div id="bottom">
+<a href="#">Home</a> | <a href="#">About Us</a> | <a href="#">Contact Us</a> 
+<div class="clear"></div>
+</div>
+<div id="credits">
+2015 &copy; All Rights Reserved.  </div>
+</footer>
+
+</body>
+</html>
